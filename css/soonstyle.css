@@ -1,0 +1,81 @@
+@font-face { font-family: Signature December; 
+			 src: url('../fonts/Signature_December.ttf'); 
+}
+
+@font-face { font-family: rocksill; 
+			 src: url('../fonts/Rocksill.otf'); }
+			 
+@font-face { font-family: comic sans MS; 
+			 src: url('../fonts/comic.ttf'); }
+			 
+@font-face { font-family: Ink Free; 
+			 src: url('../fonts/Inkfree.ttf'); }
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body{
+  background: url(../img/bg1.png) 50% 50%;
+  background-size: cover;
+}
+.container{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+.container h1{
+  text-transform: uppercase;
+  font-size: 60px;
+  margin: 0px;
+  letter-spacing: 10px;
+}
+.container h2{
+  margin: 0;
+  font-family: ink free;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 10px;
+  color: white;
+}
+.count{
+  margin: 40px 0;
+}
+.countd{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  margin: 0 30px;
+  font-size: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.countd span{
+  display: block;
+  font-size: 26px;
+  margin-top: 14px;
+}
+span.logo {
+    font-family: Signature December;
+    font-size: 60px;
+}
+.btn{
+	font-family: comic sans MS;
+    color: white;
+    margin-top: 25px;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    border-radius: 20px;
+    margin-left: 0px;
+    padding: 10px;
+    display: inline;
+}
+a, a:visited, a:hover, a:active {
+  color: white;
+}

@@ -1,0 +1,78 @@
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+}
+
+.contentcontainer{
+	padding: 50px;
+}
+h3{
+	font-family: "ink free";
+	color: black;
+}
+.content-row {
+	display: flex-direction;
+	position: relative;
+}
+.card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 20px;
+  padding : 20px 15px;
+  display : flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.card:hover {
+  height : 320px;    
+}
+
+.card .image {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  border-radius : 15px;
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+.card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+

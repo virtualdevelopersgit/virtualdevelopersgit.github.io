@@ -1,0 +1,15 @@
+
+# HTID:19156594: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:19156594:
+
+RewriteEngine On
+
+# Redirect https://virtualdevelopers.tech/index.html to https://virtualdevelopers.tech
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST}  !^www\.virtualdevelopers\.tech$ [NC]
+RewriteRule ^(.*) https://www.virtualdevelopers.tech/$1 [L,R]

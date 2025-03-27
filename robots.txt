@@ -1,0 +1,10 @@
+user-agent: *
+Allow: /pricing.html
+Allow: /portfolio.html
+Allow: /contact.html
+Allow: /about.html
+Allow: /services.html
+Allow: /blog.html
+Allow: /content.html
+Allow: /projects.html
+Sitemap: https://virtualdevelopers.tech/sitemap.xml
